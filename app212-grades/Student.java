@@ -67,7 +67,16 @@ public class Student
      */
     public void awardTestMarks()
     {
+        int value = 75;
+        for (Module module : course.modules)
+        {
+        ModuleMark mark = new ModuleMark(module);
+        mark.setMark(value);
         
+        value = value - 10;
+        
+        marks.add(mark);
+        }
     }
     
     /**

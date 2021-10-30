@@ -19,7 +19,7 @@ public class Course
      
     public Course()
     {
-        this("G400", "BSc Computing");
+        this("MT1CYS1", "BSc Cyber-security");
     }
     
     /**
@@ -43,6 +43,14 @@ public class Course
      */
     public void createModules()
     {
+    Module.co452 = new Module ("CO452", "Programming Concepts");
+    Module.co456 = new Module ("CO456", "Web Promgramming");
+    Module.co450 = new Module ("CO450", "Computer Architectures");
+    Module.co454 = new Module ("CO450", "Digi Tech");
+    addModule(co452);
+    addModule(co456);
+    addModule(co450);
+    addModule(co450);
 
     }
     
@@ -89,6 +97,9 @@ public class Course
      */
     public void printModules()
     {
-        System.out.println();
+        for (Module module : modules)
+        {
+            module.print();
     }
+}
 }

@@ -15,7 +15,7 @@ public class Module
     private String title;
 
     /**
-     * Constructor for objects of class Module 
+     * Constructor for objects of class Module
      * which initialises the module code and title
      */
     public Module(String code, String title)

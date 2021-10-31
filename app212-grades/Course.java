@@ -74,7 +74,10 @@ public class Course
         else if(mark>= 50 && mark <= 59)
         return Grades.C;
         else if (mark>= 60 && mark <= 69)
-        return 
+        return Grades.B;
+        else if (mark>= 70 && mark <= 100)
+        return Grades.A;
+        else
         return Grades.NS;
     }
     
@@ -85,14 +88,15 @@ public class Course
     public Grades calculateGrade(ArrayList<ModuleMark> marks)
     {
         int total = 0;
+        int finalMark = 0;
         for (ModuleMark mark : marks)
         {
             total = total + mark.getValue();
         }
         
         finalMark = total / MAXN_MODULES;
-        
-        return Grades.NS;
+        return finalGrade = convertToGrade(finalMark);
+        return finalGrade;
     }
     
     /**

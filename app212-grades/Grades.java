@@ -5,7 +5,9 @@ import java.util.ArrayList;
  * @author (Jake Stewart)
  * @version (20/10/21)
  */
+public class Grades
 public class Course
+
 {
     public final static int MAXN_MODULES = 4;
     

@@ -3,8 +3,8 @@
  * credits that students achieve when they
  * pass the module with a mark of 40+
  *
- * @author Derek Peacock and Nicholas Day
- * @version 1.0 17/07/2021
+ * @author Jake Stewart
+ * @version 1.0 01/11/21
  */
 public class Module
 {

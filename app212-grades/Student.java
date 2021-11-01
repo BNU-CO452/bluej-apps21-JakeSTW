@@ -1,11 +1,12 @@
 import java.util.*;
+import java.util.Random;
 /**
  * The Student class represents a student in a student administration system.
  * It holds the student details relevant in our context.
  * 
- * @author Michael Kölling and David Barnes
- * Modified by Derek Peacock & Nicholas Day
- * @version 2021-08-18
+ * @author Jake Stewart
+ * Modified by Jake stewart
+ * @version 01/11/21
  */
 public class Student
 {
@@ -17,6 +18,8 @@ public class Student
     private Course course;
     // The marks awarded for the modules on the course
     private ArrayList<ModuleMark> marks;
+    
+    private Random randomMark;
     
     /**
      * This constructor creates a new student with a
@@ -35,13 +38,28 @@ public class Student
         this.name = name;
         this.id = id;
         
+        randomMark = new Random();
         marks = new ArrayList<ModuleMark>();
+        createMarks();
     }
 
     public void addMark(ModuleMark mark)
     {
         marks.add(mark);
     }
+    
+    public void createMarks()
+    {
+        int value = 70;
+        for (Module module : course.modules)
+       {
+           ModuleMark mark = new ModuleMark(module);
+           mark.setMark(value);
+           
+          value = value - 10;
+        }
+    }
+    
     
     /**
      * Find the module by the moduleCode and
@@ -67,15 +85,14 @@ public class Student
      */
     public void awardTestMarks()
     {
-        int value = 75;
+        int value = 45;
         for (Module module : course.modules)
         {
         ModuleMark mark = new ModuleMark(module);
-        mark.setMark(value);
+        mark.setMark(randomMark.nextInt(100));
+        //value = value + 10
+        addMark(mark);
         
-        value = value - 10;
-        
-        marks.add(mark);
         }
     }
     
@@ -114,10 +131,13 @@ public class Student
         private void printModules()
     {
     for(ModuleMark mark: marks)
-    {
-        mark.print();
-        System.out.println(course.convertToGrade(mark.getValue()));
-    }
+        {
+           System.out.println(mark.getModule().getCode());
+           System.out.print("  :");
+           System.out.println(mark.getModule().getTitle());
+           System.out.print("/t");
+           System.out.print(mark.getCredit());
+        }
     }   
     
     public void printTranscript()

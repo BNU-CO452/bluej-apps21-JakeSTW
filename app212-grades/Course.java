@@ -3,8 +3,8 @@ import java.util.ArrayList;
  * This class stores information about a course
  * that enrolled students may want to complete
  *
- * @author Derek Peacock and Nicholas Day
- * @version 0.1 11/Sep/2020
+ * @author Jake Stewart
+ * @version 0.1 01/11/21
  */
 public class Course
 {
@@ -43,14 +43,11 @@ public class Course
      */
     public void createModules()
     {
-    Module.co452 = new Module("CO452", "Programming Concepts");
-    Module.co456 = new Module("CO456", "Web Promgramming");
-    Module.co450 = new Module("CO450", "Computer Architectures");
-    Module.co454 = new Module("CO450", "Digi Tech");
-    addModule(co452);
-    addModule(co456);
-    addModule(co450);
-    addModule(co454);
+    Module moduleCO452 = new Module("CO452", "Programming Concepts");
+    addModule(moduleCO452);
+    
+    Module moduleCO453 = new Module("CO453" , "Application Programming");
+    addModule(moduleCO452);
 
     }
     
@@ -117,9 +114,15 @@ public class Course
      */
     public void printModules()
     {
+        System.out.println("   Course Modules");
+        System.out.println("   -----------------");
+        System.out.println();
         for (Module module : modules)
         {
-            module.print();
+            System.out.print("    " + module.getCode());
+            System.out.print(": " + module.getTitle());
+        }
+    
+    System.out.println();
     }
-}
 }

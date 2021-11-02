@@ -48,7 +48,14 @@ public class Course
     addModule(moduleCO452);
     
     Module moduleCO453 = new Module("CO453" , "Application Programming");
-    addModule(moduleCO452);
+    addModule(moduleCO453);
+    
+    Module moduleCO450 = new Module("CO450" , "Computer Architectures");
+    addModule(moduleCO450);
+    
+    Module moduleCO454 = new Module("CO454" , 
+    "Digital technologies and Professional practice");
+    addModule(moduleCO454);
 
     }
     
@@ -85,16 +92,7 @@ public class Course
      */
     public Grades calculateGrade(ArrayList<ModuleMark> marks)
     {
-        int total = 0;
-        int finalMark = 0;
-        for (ModuleMark mark : marks)
-        {
-            total = total + mark.getValue();
-        }
-        
-        finalMark = total / MAXN_MODULES;
-        return finalGrade = convertToGrade(finalMark);
-        return finalGrade;
+        return Grades.NS;
     }
     
     /**
@@ -106,7 +104,27 @@ public class Course
         System.out.println();
         System.out.println(" Course " + code + ": " + title);
         //System.out.println();
-        
         printModules();
     }
+    
+    /**
+     * Prints out the details of a course and the four modules
+     */
+   public void printModules()
+   {
+     
+         System.out.println("Course Modules");
+         System.out.println("--------------");
+         System.out.println();
+         
+         
+            for (Module module : modules)
+            {
+                System.out.print(module.getCode());
+                System.out.println(module.getTitle());
+            }
+        
+     System.out.println();
+    }
+     
 }

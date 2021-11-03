@@ -21,6 +21,8 @@ public class Course
     public Course()
     {
         this("MT1CYS1", "BSc Cyber-security");
+        modules = new ArrayList<Module>();
+        createModules();
     }
     
     /**
@@ -92,7 +94,18 @@ public class Course
      */
     public Grades calculateGrade(ArrayList<ModuleMark> marks)
     {
-        return Grades.NS;
+        int total = 0;
+        int finalMark = 0;
+        for (ModuleMark mark : marks)
+        {
+           total = total + mark.getValue();
+           
+        }
+        
+        finalMark = total / MAXN_MODULES;
+        finalGrade = convertToGrade(finalMark);
+        
+        return finalGrade;
     }
     
     /**

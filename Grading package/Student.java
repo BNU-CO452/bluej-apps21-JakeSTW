@@ -20,6 +20,7 @@ public class Student
     private ArrayList<ModuleMark> marks;
     
     private Random randomMark;
+   
     
     /**
      * This constructor creates a new student with a
@@ -27,7 +28,7 @@ public class Student
      */
     public Student()
     {
-        this("Jake", 22133719);
+        this("jake", 22133719);
     }
     
     /**
@@ -50,13 +51,14 @@ public class Student
     
     public void createMarks()
     {
-        int value = 70;
+        int value = 75;
+        
         for (Module module : course.modules)
        {
            ModuleMark mark = new ModuleMark(module);
-           mark.setMark(value);
-           
-          value = value - 10;
+           mark.setMark(value); 
+           value = value - 10;
+           marks.add(mark);
         }
     }
     
@@ -76,7 +78,7 @@ public class Student
     public void enrol(Course course)
     {
         this.course = course;
-        createMarks();
+        awardTestMarks();
     }
     
     /**
@@ -94,6 +96,25 @@ public class Student
         addMark(mark);
         
         }
+    }
+    
+    /**
+     * Caculate the average mark from the four module marks
+     * and convert the final grade
+     */
+    public Grades caculateGrade(ArrayList<ModuleMark> marks)
+    {
+       int total = 0;
+       int finalMark = 0;
+      
+       for (ModuleMark mark : marks)
+       {
+        total = total + mark.getValue();
+        }
+    
+        Grades finalGrade = course.convertToGrade(finalMark);
+        
+        return finalGrade;
     }
     
     /**
@@ -155,7 +176,7 @@ public class Student
         System.out.println(" Code \t Module \t\tCredit\t Mark \t Grade");
         System.out.println(" ---- \t -------------------- \t ------\t ---- \t -----");
         
-       printModules();
+        printModules();
         
         Grades finalGrade = course.calculateGrade(marks);
         

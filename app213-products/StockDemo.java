@@ -23,9 +23,10 @@ public class StockDemo
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
-        stock.add(new Product(101, "Samsung Galaxy S20"));
-        stock.add(new Product(102, "Apple iPhone 12"));
-        stock.add(new Product(103, "Google Pixel 4A"));
+        stock.add(new Product(101, "Rainbow six siege"));
+        stock.add(new Product(102, "NBA 2k22"));
+        stock.add(new Product(103, "Crab game"));
+        stock.add(new Product(104, "Fifa 22"));
     }
     
     /**
@@ -50,6 +51,7 @@ public class StockDemo
     
     private void buyProducts()
     {
+        stock.buyProduct(101, 500);
     }
 
     private void sellProducts()

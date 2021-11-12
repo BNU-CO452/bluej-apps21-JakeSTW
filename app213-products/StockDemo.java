@@ -18,7 +18,7 @@ public class StockDemo
      */
     public StockDemo(StockList stock)
     {
-        this.stock = stock;
+        this.stock = new StockList();
         
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
@@ -27,6 +27,14 @@ public class StockDemo
         stock.add(new Product(102, "NBA 2k22"));
         stock.add(new Product(103, "Crab game"));
         stock.add(new Product(104, "Fifa 22"));
+        stock.add(new Product(105, "Call of Duty Vanguard"));
+        stock.add(new Product(106, "Gang beasts"));
+        stock.add(new Product(107, "WatchDogs"));
+        stock.add(new Product(108, "Animal crossing"));
+        stock.add(new Product(109, "Civilization V"));
+        stock.add(new Product(110, "phasmophobia"));
+        
+        runDemo();
     }
     
     /**
@@ -52,9 +60,15 @@ public class StockDemo
     private void buyProducts()
     {
         stock.buyProduct(101, 500);
+        stock.buyProduct(102, 200);
+        stock.buyProduct(103, 100);
+        stock.buyProduct(104, 50);
     }
 
     private void sellProducts()
     {
+      stock.sellProduct(101,300);  
+      stock.sellProduct(102,200); 
+      stock.sellProduct(101,100); 
     }    
 }

@@ -48,9 +48,13 @@ public class StockList
     {
         Product product = findProduct(productID);
         if(product != null)
-            product.increaseQuantity(amount);
+        {
+        product.increaseQuantity(amount);
+        }
         else
+        {
             System.out.println("Couldn't find product");
+        }
     }
     
     /**
@@ -68,7 +72,6 @@ public class StockList
         return null;
     }
     
-    
     /**
      * Sell one of the given product.
      * Show the before and after status of the product.
@@ -76,23 +79,39 @@ public class StockList
      */
     public void sellProduct(int productID)
     {
+        sellProduct(productID, 1);
+    }
+    
+    /**
+     * Sell many of the given product.
+     * Show the before and after status of the product.
+     * @param id The ID of the product being sold.
+     */
+    public void sellProduct(int productID, int amount)
+    {
         Product product = findProduct(productID);
         
         if(product != null) 
         {
-            if(product.getQuantity() > 0)
+            if(product.getQuantity() > 0 && product.getQuantity() > amount)
             {
-                product.decreaseQuantity(1);
-                
-                // printout message
+                product.decreaseQuantity(amount);
+                System.out.println("Bought " + amount + product.getName());
             }
-            else
+            else if (product.getQuantity() == 0)
             {
-                // printout message
+                System.out.println("Not enough shelf space for" 
+                + product.getName() + "Please sell the exisiting stock");
+            }
+            else 
+            {
+               System.out.println("Can't sell" + amount + "of" + product.getName() 
+               + "because only have" + product.getQuantity()); 
             }
         }
         else
         {
+            System.out.println("Couldn't find product");
             // printout message
         }
     }    

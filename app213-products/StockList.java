@@ -66,7 +66,9 @@ public class StockList
         for(Product product:  stock)
         {
             if(product.getID() == productID)
+            {
             return product;
+            }
         }
         
         return null;
@@ -93,7 +95,7 @@ public class StockList
         
         if(product != null) 
         {
-            if(product.getQuantity() > 0 && product.getQuantity() > amount)
+            if(product.getQuantity() > 1000 && product.getQuantity() >= amount)
             {
                 product.decreaseQuantity(amount);
                 System.out.println("Bought " + amount + product.getName());

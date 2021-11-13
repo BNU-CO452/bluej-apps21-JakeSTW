@@ -32,7 +32,7 @@ public class StockDemo
         stock.add(new Product(107, "WatchDogs"));
         stock.add(new Product(108, "Animal crossing"));
         stock.add(new Product(109, "Civilization V"));
-        stock.add(new Product(110, "phasmophobia"));
+        stock.add(new Product(110, "Phasmophobia"));
         
         runDemo();
     }
@@ -59,16 +59,22 @@ public class StockDemo
     
     private void buyProducts()
     {
-        stock.buyProduct(101, 500);
+        stock.buyProduct(101, 250);
         stock.buyProduct(102, 200);
         stock.buyProduct(103, 100);
-        stock.buyProduct(104, 50);
+        stock.buyProduct(104, 25);
+        stock.buyProduct(105, 250);
+        stock.buyProduct(106, 200);
+        stock.buyProduct(107, 100);
+        stock.buyProduct(108, 25);
+        stock.buyProduct(109, 25);
+        stock.buyProduct(110, 25);
     }
 
     private void sellProducts()
     {
       stock.sellProduct(101,300);  
       stock.sellProduct(102,200); 
-      stock.sellProduct(101,100); 
+      stock.sellProduct(103,100); 
     }    
 }

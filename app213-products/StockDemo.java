@@ -4,8 +4,8 @@
  * The demonstration becomes properly functional as
  * the StockManager class is completed.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Jake Stewart
+ * @version 14/11/21
  */
 public class StockDemo
 {
@@ -18,7 +18,7 @@ public class StockDemo
      */
     public StockDemo(StockList stock)
     {
-        this.stock = new StockList();
+        this.stock = stock;
         
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
@@ -59,29 +59,29 @@ public class StockDemo
     
     private void buyProducts()
     {
-        stock.buyProduct(101, 100);
-        stock.buyProduct(102, 100);
-        stock.buyProduct(103, 100);
-        stock.buyProduct(104, 100);
-        stock.buyProduct(105, 100);
-        stock.buyProduct(106, 100);
-        stock.buyProduct(107, 100);
-        stock.buyProduct(108, 100);
-        stock.buyProduct(109, 100);
-        stock.buyProduct(110, 100);
+        stock.buyProduct(101, 50);
+        stock.buyProduct(102, 50);
+        stock.buyProduct(103, 50);
+        stock.buyProduct(104, 50);
+        stock.buyProduct(105, 50);
+        stock.buyProduct(106, 50);
+        stock.buyProduct(107, 50);
+        stock.buyProduct(108, 50);
+        stock.buyProduct(109, 50);
+        stock.buyProduct(110, 50);
     }
 
     private void sellProducts()
     {
-      stock.sellProduct(101,100);  
-      stock.sellProduct(102,100); 
-      stock.sellProduct(103,100); 
-      stock.sellProduct(104,100); 
-      stock.sellProduct(105,100); 
-      stock.sellProduct(106,100); 
-      stock.sellProduct(107,100); 
-      stock.sellProduct(108,100); 
-      stock.sellProduct(109,100); 
-      stock.sellProduct(110,100); 
+      stock.sellProduct(101,25);  
+      stock.sellProduct(102,25); 
+      stock.sellProduct(103,25); 
+      stock.sellProduct(104,25); 
+      stock.sellProduct(105,25); 
+      stock.sellProduct(106,25); 
+      stock.sellProduct(107,25); 
+      stock.sellProduct(108,25); 
+      stock.sellProduct(109,25); 
+      stock.sellProduct(110,25); 
     }    
 }

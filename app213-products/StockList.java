@@ -30,6 +30,20 @@ public class StockList
     }
     
     /**
+     * Removes product by Product ID.
+     * @param item the product item to be added.
+     */
+    public Product remove(int productID)
+    {
+        Product product = findProduct(productID);
+        if (product!= null)
+        stock.remove(product);
+        else
+        System.out.println("Could not find product");
+        return product;
+    }
+    
+    /**
      * A method to buy a single quantity of the product
      */
     public void buyProduct(int productID)
@@ -37,23 +51,47 @@ public class StockList
         buyProduct(productID, 1);
     }
     
-    
     /**
      * Buy a quantity of a particular product.
-     * Increase the quantity of the product by the given amount.
-     * @param id The ID of the product.
+     * Increase the quantity of the product by given amount.
+     * @param id The ID of tje product.
      * @param amount The amount to increase the quantity by.
      */
     public void buyProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
-        if(product != null)
-        {
         product.increaseQuantity(amount);
-        }
-        else
+    }
+    
+    /**
+     * Check levels of stock
+     * If the stock is less than minimum it will buy in more
+     */
+    public void lowStocklist()
+    {
+        printHeading();
+        for (Product product: stock)
         {
-            System.out.println("Couldn't find product");
+            if(product.getQuantity() < 3)
+            product.increaseQuantity(10);
+        }
+        System.out.println();
+        for (Product product : stock)
+        {
+            product.print();
+        }
+    }
+    
+    /**
+     * Find a product to match the product name,
+     * if not found return null
+     */
+    public void searchForProduct(String productName)
+    {
+        for (Product product: stock)
+        if(productName.contains(productName))
+        {
+            System.out.println(product);
         }
     }
     
@@ -63,14 +101,12 @@ public class StockList
      */
     public Product findProduct(int productID)
     {
-        for(Product product:  stock)
+        for(Product product : stock )
         {
             if(product.getID() == productID)
-            {
             return product;
-            }
+            System.out.println(product);
         }
-        
         return null;
     }
     

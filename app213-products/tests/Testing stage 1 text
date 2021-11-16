@@ -1,0 +1,16 @@
+Product product2 = new Product(112, "Jakeys adventures");
+product2.print();
+ ID 112: Jakeys adventures stock level: 0
+product2.decreaseQuantity(2);
+product2.print();
+ ID 112: Jakeys adventures stock level: 0
+product2.increaseQuantity(10);
+product2.print();
+ ID 112: Jakeys adventures stock level: 10
+product2.decreaseQuantity(5);
+product2.print();
+ ID 112: Jakeys adventures stock level: 5
+Product product3 = new Product(113, "The Stewarts");
+StockList Jakestocklist = new StockList();
+Jakestocklist.add(product2);
+Jakestocklist.add(product3);

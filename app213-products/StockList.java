@@ -95,7 +95,7 @@ public class StockList
         
         if(product != null) 
         {
-            if(product.getQuantity() > 1000 && product.getQuantity() >= amount)
+            if(product.getQuantity() > 5000 && product.getQuantity() >= amount)
             {
                 product.decreaseQuantity(amount);
                 System.out.println("Bought " + amount + product.getName());

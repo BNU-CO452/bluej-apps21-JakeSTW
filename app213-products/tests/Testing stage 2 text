@@ -1,0 +1,123 @@
+StockList jakestock = new StockList();
+StockDemo stockdemo = new StockDemo(jakestock);
+
+ Jake's Stock List
+ ====================
+
+ ID 101: Rainbow six siege stock level: 0
+ ID 102: NBA 2k22 stock level: 0
+ ID 103: Crab game stock level: 0
+ ID 104: Fifa 22 stock level: 0
+ ID 105: Call of Duty Vanguard stock level: 0
+ ID 106: Gang beasts stock level: 0
+ ID 107: WatchDogs stock level: 0
+ ID 108: Animal crossing stock level: 0
+ ID 109: Civilization V stock level: 0
+ ID 110: Phasmophobia stock level: 0
+
+
+ Jake's Stock List
+ ====================
+
+ ID 101: Rainbow six siege stock level: 4955
+ ID 102: NBA 2k22 stock level: 0
+ ID 103: Crab game stock level: 0
+ ID 104: Fifa 22 stock level: 0
+ ID 105: Call of Duty Vanguard stock level: 0
+ ID 106: Gang beasts stock level: 0
+ ID 107: WatchDogs stock level: 0
+ ID 108: Animal crossing stock level: 0
+ ID 109: Civilization V stock level: 0
+ ID 110: Phasmophobia stock level: 0
+
+ ID 101: Rainbow six siege stock level: 5660
+ ID 101: Rainbow six siege stock level: 5660
+ ID 102: NBA 2k22 stock level: 404
+ ID 101: Rainbow six siege stock level: 5660
+ ID 102: NBA 2k22 stock level: 404
+ ID 103: Crab game stock level: 504
+ ID 101: Rainbow six siege stock level: 5660
+ ID 102: NBA 2k22 stock level: 404
+ ID 103: Crab game stock level: 504
+ ID 104: Fifa 22 stock level: 232
+ ID 101: Rainbow six siege stock level: 5660
+ ID 102: NBA 2k22 stock level: 404
+ ID 103: Crab game stock level: 504
+ ID 104: Fifa 22 stock level: 232
+ ID 105: Call of Duty Vanguard stock level: 338
+ ID 101: Rainbow six siege stock level: 5660
+ ID 102: NBA 2k22 stock level: 404
+ ID 103: Crab game stock level: 504
+ ID 104: Fifa 22 stock level: 232
+ ID 105: Call of Duty Vanguard stock level: 338
+ ID 106: Gang beasts stock level: 208
+ ID 101: Rainbow six siege stock level: 5660
+ ID 102: NBA 2k22 stock level: 404
+ ID 103: Crab game stock level: 504
+ ID 104: Fifa 22 stock level: 232
+ ID 105: Call of Duty Vanguard stock level: 338
+ ID 106: Gang beasts stock level: 208
+ ID 107: WatchDogs stock level: 552
+ ID 101: Rainbow six siege stock level: 5660
+ ID 102: NBA 2k22 stock level: 404
+ ID 103: Crab game stock level: 504
+ ID 104: Fifa 22 stock level: 232
+ ID 105: Call of Duty Vanguard stock level: 338
+ ID 106: Gang beasts stock level: 208
+ ID 107: WatchDogs stock level: 552
+ ID 108: Animal crossing stock level: 805
+ ID 101: Rainbow six siege stock level: 5660
+ ID 102: NBA 2k22 stock level: 404
+ ID 103: Crab game stock level: 504
+ ID 104: Fifa 22 stock level: 232
+ ID 105: Call of Duty Vanguard stock level: 338
+ ID 106: Gang beasts stock level: 208
+ ID 107: WatchDogs stock level: 552
+ ID 108: Animal crossing stock level: 805
+ ID 109: Civilization V stock level: 146
+
+ Jake's Stock List
+ ====================
+
+ ID 101: Rainbow six siege stock level: 5660
+ ID 102: NBA 2k22 stock level: 404
+ ID 103: Crab game stock level: 504
+ ID 104: Fifa 22 stock level: 232
+ ID 105: Call of Duty Vanguard stock level: 338
+ ID 106: Gang beasts stock level: 208
+ ID 107: WatchDogs stock level: 552
+ ID 108: Animal crossing stock level: 805
+ ID 109: Civilization V stock level: 146
+ ID 110: Phasmophobia stock level: 112
+
+jakestock.buyProduct(101, 10);
+jakestock.sellProduct(101, 10);
+Bought 10Rainbow six siege
+jakestock.remove(102)
+ ID 101: Rainbow six siege stock level: 5660
+    returned Object <object reference>
+jakestock.searchForProduct("Rainbow six siege");
+ ID 101: Rainbow six siege stock level: 5660
+ ID 103: Crab game stock level: 504
+ ID 104: Fifa 22 stock level: 232
+ ID 105: Call of Duty Vanguard stock level: 338
+ ID 106: Gang beasts stock level: 208
+ ID 107: WatchDogs stock level: 552
+ ID 108: Animal crossing stock level: 805
+ ID 109: Civilization V stock level: 146
+ ID 110: Phasmophobia stock level: 112
+jakestock.lowStocklist();
+
+ Jake's Stock List
+ ====================
+
+
+ ID 101: Rainbow six siege stock level: 5660
+ ID 103: Crab game stock level: 504
+ ID 104: Fifa 22 stock level: 232
+ ID 105: Call of Duty Vanguard stock level: 338
+ ID 106: Gang beasts stock level: 208
+ ID 107: WatchDogs stock level: 552
+ ID 108: Animal crossing stock level: 805
+ ID 109: Civilization V stock level: 146
+ ID 110: Phasmophobia stock level: 112

@@ -11,6 +11,7 @@ public class StockApp
 {
     private InputReader reader;
     
+    private StockList stock;
     //private ProductList stock;
     
     /**
@@ -20,6 +21,7 @@ public class StockApp
     {
         reader = new InputReader();
         
+        stock = new StockList();
         //stock = new ProductList();
         //StockDemo demo = new StockDemo(stock);
     }
@@ -49,9 +51,16 @@ public class StockApp
         {
             return true;
         }
+        else if(choice.equals("add"))
+        {
+            
+            int id = reader.getInt("Please enter the ID");
+            String name = reader.getString("Please enter the name of the product: ");
+            Product product = new Product(id,name);
+        }
         else if(choice.equals("print"))
         {
-            //stock.print();
+            stock.print();
         }
         
         return false;
@@ -60,7 +69,7 @@ public class StockApp
     /**
      * Print out a menu of operation choices
      */
-    private void printMenuChoices()
+    private void printMenuChoices() 
     {
         System.out.println();
         System.out.println("    Add:        Add a new product");
@@ -77,7 +86,7 @@ public class StockApp
     {
         System.out.println("********************************");
         System.out.println("  App21-04: Stock Application ");
-        System.out.println("      by Student Name");
+        System.out.println("      by Jake Stewart");
         System.out.println("********************************");
     }
 }

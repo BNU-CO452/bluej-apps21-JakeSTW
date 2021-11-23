@@ -12,7 +12,7 @@ public class StockApp
     private InputReader reader;
     
     private StockList stock;
-    //private ProductList stock;
+    
     
     /**
      * Constructor for objects of class StockApp
@@ -22,8 +22,7 @@ public class StockApp
         reader = new InputReader();
         
         stock = new StockList();
-        //stock = new ProductList();
-        //StockDemo demo = new StockDemo(stock);
+        StockDemo demo = new StockDemo(stock);
     }
 
     /**

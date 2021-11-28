@@ -1,0 +1,200 @@
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Jake's Stock List
+ ====================
+
+ ID 101: Rainbow six siege stock level: 6282
+ ID 102: NBA 2k22 stock level: 258
+ ID 103: Crab game stock level: 814
+ ID 104: Fifa 22 stock level: 94
+ ID 105: Call of Duty Vanguard stock level: 321
+ ID 106: Gang beasts stock level: 447
+ ID 107: WatchDogs stock level: 675
+ ID 108: Animal crossing stock level: 333
+ ID 109: Civilization V stock level: 240
+ ID 110: Phasmophobia stock level: 694
+
+********************************
+  App21-04: Stock Application 
+      by Jake Stewart
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > 101
+********************************
+  App21-04: Stock Application 
+      by Jake Stewart
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > quit
+Program.main({ });
+
+ Jake's Stock List
+ ====================
+
+ ID 101: Rainbow six siege stock level: 0
+ ID 102: NBA 2k22 stock level: 0
+ ID 103: Crab game stock level: 0
+ ID 104: Fifa 22 stock level: 0
+ ID 105: Call of Duty Vanguard stock level: 0
+ ID 106: Gang beasts stock level: 0
+ ID 107: WatchDogs stock level: 0
+ ID 108: Animal crossing stock level: 0
+ ID 109: Civilization V stock level: 0
+ ID 110: Phasmophobia stock level: 0
+
+
+ Jake's Stock List
+ ====================
+
+ ID 101: Rainbow six siege stock level: 5518
+ ID 102: NBA 2k22 stock level: 0
+ ID 103: Crab game stock level: 0
+ ID 104: Fifa 22 stock level: 0
+ ID 105: Call of Duty Vanguard stock level: 0
+ ID 106: Gang beasts stock level: 0
+ ID 107: WatchDogs stock level: 0
+ ID 108: Animal crossing stock level: 0
+ ID 109: Civilization V stock level: 0
+ ID 110: Phasmophobia stock level: 0
+
+ ID 101: Rainbow six siege stock level: 5928
+ ID 101: Rainbow six siege stock level: 5928
+ ID 102: NBA 2k22 stock level: 85
+ ID 101: Rainbow six siege stock level: 5928
+ ID 102: NBA 2k22 stock level: 85
+ ID 103: Crab game stock level: 258
+ ID 101: Rainbow six siege stock level: 5928
+ ID 102: NBA 2k22 stock level: 85
+ ID 103: Crab game stock level: 258
+ ID 104: Fifa 22 stock level: 514
+ ID 101: Rainbow six siege stock level: 5928
+ ID 102: NBA 2k22 stock level: 85
+ ID 103: Crab game stock level: 258
+ ID 104: Fifa 22 stock level: 514
+ ID 105: Call of Duty Vanguard stock level: 516
+ ID 101: Rainbow six siege stock level: 5928
+ ID 102: NBA 2k22 stock level: 85
+ ID 103: Crab game stock level: 258
+ ID 104: Fifa 22 stock level: 514
+ ID 105: Call of Duty Vanguard stock level: 516
+ ID 106: Gang beasts stock level: 783
+ ID 101: Rainbow six siege stock level: 5928
+ ID 102: NBA 2k22 stock level: 85
+ ID 103: Crab game stock level: 258
+ ID 104: Fifa 22 stock level: 514
+ ID 105: Call of Duty Vanguard stock level: 516
+ ID 106: Gang beasts stock level: 783
+ ID 107: WatchDogs stock level: 610
+ ID 101: Rainbow six siege stock level: 5928
+ ID 102: NBA 2k22 stock level: 85
+ ID 103: Crab game stock level: 258
+ ID 104: Fifa 22 stock level: 514
+ ID 105: Call of Duty Vanguard stock level: 516
+ ID 106: Gang beasts stock level: 783
+ ID 107: WatchDogs stock level: 610
+ ID 108: Animal crossing stock level: 677
+ ID 101: Rainbow six siege stock level: 5928
+ ID 102: NBA 2k22 stock level: 85
+ ID 103: Crab game stock level: 258
+ ID 104: Fifa 22 stock level: 514
+ ID 105: Call of Duty Vanguard stock level: 516
+ ID 106: Gang beasts stock level: 783
+ ID 107: WatchDogs stock level: 610
+ ID 108: Animal crossing stock level: 677
+ ID 109: Civilization V stock level: 549
+
+ Jake's Stock List
+ ====================
+
+ ID 101: Rainbow six siege stock level: 5928
+ ID 102: NBA 2k22 stock level: 85
+ ID 103: Crab game stock level: 258
+ ID 104: Fifa 22 stock level: 514
+ ID 105: Call of Duty Vanguard stock level: 516
+ ID 106: Gang beasts stock level: 783
+ ID 107: WatchDogs stock level: 610
+ ID 108: Animal crossing stock level: 677
+ ID 109: Civilization V stock level: 549
+ ID 110: Phasmophobia stock level: 699
+
+********************************
+  App21-04: Stock Application 
+      by Jake Stewart
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter the ID
+110
+Please enter the name of the product: 
+Your input is blank!
+
+Please enter the name of the product: Star wars battlefront
+Product110, Star wars battlefronthas been ADDED
+********************************
+  App21-04: Stock Application 
+      by Jake Stewart
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter the ID
+101
+Please enter the name of the product: 
+Your input is blank!
+
+Please enter the name of the product: Rainbow six siege
+Product101, Rainbow six siegehas been ADDED
+********************************
+  App21-04: Stock Application 
+      by Jake Stewart
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > remove
+********************************
+  App21-04: Stock Application 
+      by Jake Stewart
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > 111
+********************************
+  App21-04: Stock Application 
+      by Jake Stewart
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > 

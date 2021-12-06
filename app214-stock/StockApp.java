@@ -78,6 +78,9 @@ public class StockApp
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    Print:      Print all products");
         System.out.println("    Quit:       Quit the program");
+        System.out.println("    Buy         Buy product");
+        System.out.println("    Sell        Sell Product");
+        System.out.println("    Search      Search for products");
         System.out.println();        
     }
     

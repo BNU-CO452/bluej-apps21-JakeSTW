@@ -13,6 +13,7 @@ public class StockDemo
     private StockList stock;
     
     private Random random;
+    
 
     /**
      * Create a StockManager and populate it with at least

@@ -8,14 +8,14 @@
  *                 |
  *          [Computer Lab]<---->[Office]
  *             
- * @author Derek Peacock and Nicholas Day
- * @version 2021-08-22
+ * @author Jake Stewart
+ * @version 16/12/21 
  */
 public class Map
 {
     // Need to add a list of exits
     
-    private Location outside, theater, pub, lab, office;
+    private Location outside, theater, pub, lab, office, server;
 
     private Location currentLocation;
 
@@ -40,6 +40,7 @@ public class Map
         createPub();
         createOffice();
         createLab();
+        createServer();
 
         currentLocation = outside;  // start game outside
     }
@@ -98,6 +99,14 @@ public class Map
         
         lab.setExit("north", outside);
         outside.setExit("south", lab);
+    }
+    
+    private void createServer()
+    {
+        server = new Location("in the server room");
+        
+        server.setExit("east", lab);
+        lab.setExit("west", server);
     }
     
     public Location getCurrentLocation()

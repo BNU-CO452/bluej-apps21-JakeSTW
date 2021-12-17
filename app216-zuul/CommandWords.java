@@ -3,8 +3,8 @@
  * This contains all the possible command words
  * for the game of Zuul
  *
- * @author Derek Peacock & Nicholas Day
- * @version 25-08-2021
+ * @author Jake Stewart
+ * @version 16/12/21
  */
 public enum CommandWords
 {

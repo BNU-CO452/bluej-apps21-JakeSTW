@@ -107,6 +107,10 @@ public class Map
         
         server.setExit("east", lab);
         lab.setExit("west", server);
+        
+        server.setItem(new Item(name "USB", 
+        descrption "The USB stick contains the password to the server", 
+        id 101));
     }
     
     public Location getCurrentLocation()

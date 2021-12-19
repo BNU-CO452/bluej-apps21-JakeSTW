@@ -18,6 +18,11 @@ public Item(String name, String description, int id)
     this.id = id;
 }
 
+public String getName()
+{
+    return name;
+}
+
 public void getShortDescription()
 {
     System.out.println(name);

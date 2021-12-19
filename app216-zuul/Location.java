@@ -68,9 +68,10 @@ public class Location
      */
     public String getLongDescription()
     {
-        return " You are " + description + ".\n" + getExitString();
+        return " You are " + description + ".\n" + getExitString() 
+        + "./n" + getItemString();
     }
-
+    
     /**
      * Return a string describing the locations's exits, 
      * for example "Exits: north west".
@@ -85,6 +86,17 @@ public class Location
             returnString += " " + exit;
         }
         return returnString;
+    }
+
+    private String getItemString()
+    {
+    if(item != null)
+    {
+        String return = "Items: ";
+        returnString +=" " + item.getName();
+        return returnString;
+    }
+    return null;
     }
 
     /**

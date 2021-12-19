@@ -52,7 +52,8 @@ public class Map
     private void createOutside()
     {
         outside = new Location("outside the main entrance of the university");
-        
+        outside.setItem(new Item("ID card", 
+        "The ID card allows access to the front building", 102));
     }
     
     /**
@@ -108,9 +109,8 @@ public class Map
         server.setExit("east", lab);
         lab.setExit("west", server);
         
-        server.setItem(new Item(name "USB", 
-        descrption "The USB stick contains the password to the server", 
-        id 101));
+        server.setItem(new Item("USB", 
+        "The USB stick contains the password to the server", 101));
     }
     
     public Location getCurrentLocation()

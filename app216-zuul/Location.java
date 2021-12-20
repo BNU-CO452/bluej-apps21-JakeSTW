@@ -68,8 +68,10 @@ public class Location
      */
     public String getLongDescription()
     {
-        return " You are " + description + ".\n" + getExitString() 
-        + "./n" + getItemString();
+        String returnString = " You are " + description + ".\n" + getExitString(); 
+        if(getItemString() != null)
+        returnString += "./n" + getItemString();
+        return returnString;
     }
     
     /**
@@ -92,11 +94,11 @@ public class Location
     {
     if(item != null)
     {
-        String return = "Items: ";
-        returnString +=" " + item.getName();
+        String returnString = "Items: ";
+        returnString += item.getName() + " ";
         return returnString;
     }
-    return null;
+    return " ";
     }
 
     /**
